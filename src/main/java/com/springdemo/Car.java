@@ -1,8 +1,11 @@
 package com.springdemo;
 
-public class Car {
+import com.springdemo.interfaces.IVehicle;
 
+public class Car implements IVehicle {
+
+    @Override
     public void drive() {
-        System.out.println("car running");
+        System.out.println("car is running");
     }
 }

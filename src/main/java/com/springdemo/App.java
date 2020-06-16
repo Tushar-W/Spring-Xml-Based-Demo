@@ -1,12 +1,11 @@
 package com.springdemo;
 
+import com.springdemo.interfaces.IVehicle;
+
 public class App{
 
     public static void main(String[] args){
-       Car car = new Car();
-       car.drive();
-
-       Bike bike = new Bike();
-       bike.drive();
+        IVehicle vehicle = new Car();
+        vehicle.drive();
     }
 }
