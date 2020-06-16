@@ -1,6 +1,6 @@
 package com.springdemo;
 
-public class App {
+public class App{
 
     public static void main(String[] args){
        Car car = new Car();

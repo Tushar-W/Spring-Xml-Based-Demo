@@ -33,7 +33,6 @@
       <artifactId>spring-webmvc</artifactId>
       <version>5.2.3.RELEASE</version>
     </dependency>
-
   </dependencies>
 
   <build>
