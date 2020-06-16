@@ -1,11 +1,15 @@
 package com.springdemo;
 
 import com.springdemo.interfaces.IVehicle;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App{
 
     public static void main(String[] args){
-        IVehicle vehicle = new Car();
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        IVehicle vehicle = (IVehicle) context.getBean("vehicle");
         vehicle.drive();
     }
 }
